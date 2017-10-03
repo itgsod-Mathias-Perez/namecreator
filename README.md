@@ -1,12 +1,12 @@
 # first project
 
 
-## forka
+## fork
 
 ni ska forka det här projektet
 
 
-## klona
+## clone
 
 öppna det sedan i pycharm
 
