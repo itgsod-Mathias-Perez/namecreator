@@ -1,14 +1,20 @@
 from nick import create_nick
 
-with open('users.csv') as userfile:
-    # read the lines
-    for row in userfile.readlines():
+
+with open('users.csv') as usersfile:
+    for row in usersfile.readlines():
         user = row.strip().split(',')
 
         firstname = user[0]
-        lastname = user [1]
+        lastname = user[1]
+        birthday = user[2]
 
-        nickname = create_nick(firstname, lastname)
+        username = create_nick(firstname,lastname,birthday)
 
-        print nickname
+        #print out firstname, lastname and username
+
+        nick = firstname + lastname + '=' + username
+        print nick
+
+
 
